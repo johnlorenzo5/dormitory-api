@@ -1,0 +1,17 @@
+/* resources/css/app.css */
+
+/* Tailwind Directives (MUST come first) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Your Custom CSS (add below Tailwind) */
+.header {
+  background-color: theme('colors.indigo.600'); /* Using Tailwind colors */
+}
+
+/* Legacy styles you want to keep */
+.old-button {
+  @apply px-4 py-2 rounded; /* Convert to Tailwind */
+  background: #123456; /* Keep if necessary */
+}
